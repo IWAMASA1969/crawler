@@ -13,6 +13,15 @@ def parse(page_source)
   }
 end
 
+def format_text(title, url, url_title_ary)
+  s = "Title: #{title}\nURL: #{url}\n\n"
+  url_title_ary.each do |aurl, atitle, atime|
+    s << "* (#{atime})#{atitle}\n"
+    s << "   #{aurl}\n"
+  end
+  s
+end
+
 x = parse(`/usr/bin/wget -q -O- http://crawler.sbcr.jp/samplepage.html`)
 
-puts x[0, 2]
+puts format_text("WWW.SBCR.JP TOPICS", "http://crawler.sbcr.jp/samplepage.html", x)
