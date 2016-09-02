@@ -1,11 +1,18 @@
-page_source = open("../samplepage.html", &:read)
-dates = page_source.scan(%r!(\d+)年 ?(\d+)月 ?(\d+)日<br />!)
-puts dates[0,4]
+# -*- coding: utf-8 -*-
+require 'cgi'
 
-url_titles = page_source.scan(
-  %r!^<a href="(.+?)">(.+?)</a><br />!
-)
-puts url_titles[0,4]
+def parse(page_source)
+  dates = page_source.scan(%r!(\d+)年 ?(\d+)月 ?(\d+)日<br />!)
 
-puts dates.length
-puts url_titles.length
+  url_titles = page_source.scan(
+    %r!^<a href="(.+?)">(.+?)</a><br />!
+  )
+
+  url_titles.zip(dates).map{|(aurl, atitle), ymd|
+    [CGI.unescapeHTML(aurl), CGI.unescapeHTML(atitle), Time.local(*ymd)]
+  }
+end
+
+x = parse(open("../samplepage.html", &:read))
+
+puts x[0, 2]
