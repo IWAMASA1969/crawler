@@ -24,6 +24,8 @@ def format_text(title, url, url_title_ary)
   s
 end
 
-x = parse(open("http://crawler.sbcr.jp/samplepage.html", &:read).toutf8)
-
-puts format_text("WWW.SBCR.JP TOPICS", "http://crawler.sbcr.jp/samplepage.html", x)
+puts format_text(
+  "WWW.SBCR.JP TOPICS",
+  "http://crawler.sbcr.jp/samplepage.html",
+  parse(open("http://crawler.sbcr.jp/samplepage.html", &:read).toutf8)
+)

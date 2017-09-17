@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ja"><!-- InstanceBegin template="/Templates/20140227内部ページ.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>従業員専用TOP</title>
+<!-- InstanceEndEditable -->
+<link href="css/willway_emp_exclusive.css" rel="stylesheet">
+<!-- InstanceBeginEditable name="head" -->
+<meta name="ROBOTS" content="ALL">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<!-- InstanceEndEditable -->
+<!-- InstanceParam name="id" type="text" value="w_recruit_movie_main" -->
+<!-- InstanceParam name="詳細ページ識別用" type="text" value="w_recruit_movie" -->
+<!-- InstanceParam name="どのカテゴリかを記述" type="text" value="w_recruit" -->
+<!-- InstanceParam name="そのほかのbody追記" type="text" value="" -->
+<!-- InstanceBeginEditable name="form" -->
+<!-- InstanceEndEditable -->
+</head>
+<body id="w_recruit" class="w_recruit_movie" data-target="#w_sidebar" >
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-55WFMT" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-55WFMT');</script>
+<!-- End Google Tag Manager -->
+<div id="w_page">
+<div id="wrap">
+<header>
+<div id="header">
+<div class="container">
+<div class="clearfix">
+<!-- InstanceBeginEditable name="topbutton" -->
+<!-- InstanceEndEditable -->
+<!--<h1 class="w_mbtm10"><img class="img-responsive" src="images/r_title01.gif" alt="従業員専用TOP"></h1>-->
+<h1 class="w_mbtm10">従業員専用TOP</h1>
+</div>
+</div> <!-- /container -->
+</div><!-- /header -->
+</header>
+
+<section>
+<div class="container clearfix" id="w_top">
+<div id="w_main_wrap" class="row">
+<div class="clearfix">&nbsp;</div>
+<div class="visible-xs"><div class="clearfix"></div></div>
+<div class="col-sm-9 col-xs-12">
+<div id="w_main">
+<div id="w_recruit_movie_main" class="linkcontents">
+<div class="w_movie_wrap02">
+<p class="w_text-center w_mbtm25"><img class="img-responsive" src="images/r_movie_text01.png" alt="ログインしてください"></p>
+<form  action="index.php" method="post">
+<input type="hidden" value="login" name="mode">
+<label><input id="loginID" class="form-control" type="text" placeholder="メールアドレスを入力してください。" class="form-control" name="loginID" value=""></label>
+<label><input id="loginPWD" class="form-control" type="text" placeholder="パスワードを入力してください。" class="form-control" name="loginPWD" value=""></label>
+
+<div class="w_text-center w_mtop25 w_mbtm25">
+<input type="image" src="images/r_login_btn.png" class="img-responsive w_hover" alt="ログイン" onclick="submit();">
+</div>
+</form>
+</div>
+</div><!-- /#w_recruit -->
+</div><!-- /#w_main -->
+</div><!-- /.col-sm-9 -->
+</div><!--/#w_main_wrap.row-->
+</div><!-- /container -->
+</section>
+
+</div><!--/#wrap-->
+
+<div class="clearfix"></div>
+<div class="w_padding"></div>
+<footer><!-- #BeginLibraryItem "/Library/フッター本体.lbi" --><div id="footer">
+ <div id="w_footer_menu">
+
+</div><!-- /#w_footer_menu -->
+
+<div id="w_footer_bottom">
+<div class="pc">
+<div class="container">
+<p><a href="../../policy">情報セキュリティ方針</a></p>
+<p><a href="../../policy/person.html">個人情報の取り扱い</a></p>
+<address>Copyright &copy; 2014 WillWay Inc. All Rights Reserved.</address>
+<p class="w_right">このサイトはInternet Explorer 8、及びそれ以前のブラウザには対応しておりません。各ブラウザとも最新バージョンでご覧下さい。</p>
+</div><!-- /.container -->
+</div>
+</div><!-- /#w_footer_bottom -->
+
+
+</div><!-- /#footer --><!-- #EndLibraryItem --><!-- /#footer -->
+</footer>
+</div><!--/#w_page -->
+<div class="w_page_top"><a href="#top">PAGE TOP ▲</a></div>
+
+<!-- InstanceBeginEditable name="bootstrap-js" -->
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../common/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <link href="../common/css/willway-for-ie8.css" rel="stylesheet">
+
+      <script src="../common/html5shiv.js"></script>
+      <script src="../common/respond.min.js"></script>
+    <![endif]-->
+<!-- InstanceEndEditable -->
+
+<script src="//code.jquery.com/jquery.js"></script>
+<script src="../common/js/bootstrap.min.js"></script>
+<script src="../common/js/willway-custom.js"></script>
+<script src="../common/js/scroll.js"></script>
+
+<!-- InstanceBeginEditable name="bootstrap-js2" -->
+<!--[if lt IE 9]>
+<script src="../common/js/willway-custom-for-ie8.js"></script>
+<![endif]-->
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="js" -->
+<!-- InstanceEndEditable -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script type="text/javascript">
+var protocol = document.location.protocol;
+document.write(unescape("%3Cscript type='text/javascript' src='"+protocol+"//list-finder.jp/js/tracking.js'%3E%3C/script%3E"));
+</script>
+
+<script type="text/javascript">
+var uid = 'P22EhZ6c2F';
+track(uid);
+</script>
+
+</body>
+<!-- InstanceEnd --></html>

@@ -1,0 +1,4 @@
+User-Agent:*
+Disallow: /news.html
+
+Sitemap:http://www.willway.jp/sitemap.xml
